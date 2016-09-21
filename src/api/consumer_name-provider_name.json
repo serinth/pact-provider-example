@@ -1,0 +1,40 @@
+{
+    "provider": {
+        "name": "provider_name"
+    },
+    "consumer": {
+        "name": "consumer_name"
+    },
+    "interactions": [
+        {
+            "description": "a request for a traveller",
+            "request": {
+                "method": "GET",
+                "path": "/api/traveller",
+                "headers": {
+                    "Content-Type": "application/json; charset=utf-8"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json; charset=utf-8"
+                },
+                "body": {
+                    "firstName": "Tony",
+                    "id": 1,
+                    "lastName": "Truong"
+                }
+            },
+            "providerState": "I have a list of travellers"
+        }
+    ],
+    "metadata": {
+        "pact-specification": {
+            "version": "2.0.0"
+        },
+        "pact-jvm": {
+            "version": "2.4.15"
+        }
+    }
+}
